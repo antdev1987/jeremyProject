@@ -1,0 +1,175 @@
+/*
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+body {
+  background: #000;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+}
+@media (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.jf-sb {
+  justify-content: space-between;
+}
+
+.jf-center {
+  justify-content: center;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 2rem;
+}
+
+.g-3 {
+  gap: 3rem;
+}
+
+.g-4 {
+  gap: 4rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-4 {
+  font-size: 4rem;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=style.css.map */
