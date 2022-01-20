@@ -4,13 +4,13 @@
 - tab-land
 - big-desktop
 */
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -38,17 +38,9 @@ html {
 }
 
 body {
-  background: #000;
-  box-sizing: border-box;
-  font-family: "Heebo", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
-}
-@media (max-width: 37.5em) {
-  body {
-    padding: 0;
-  }
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
@@ -77,6 +69,14 @@ a {
 
 .jf-center {
   justify-content: center;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.fd-column {
+  flex-direction: column;
 }
 
 .g-1 {
@@ -115,9 +115,18 @@ a {
   margin-top: 5rem;
 }
 
+.pY-2 {
+  padding: 2rem 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (min-width: 112.5em) {
+  .container {
+    max-width: 1700px;
+  }
 }
 
 .fs-1 {
@@ -134,6 +143,10 @@ a {
 
 .fs-4 {
   font-size: 4rem;
+}
+
+.fs-5 {
+  font-size: 5rem;
 }
 
 .fw-100 {
@@ -170,6 +183,41 @@ a {
 
 .fw-900 {
   font-weight: 900;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-gray {
+  color: #f8f8f8;
+}
+
+.c-blue-light {
+  color: #57acf5;
+}
+
+.btn {
+  padding: 2rem 8rem;
+  color: #f8f8f8;
+  background: #2b79bd;
+  font-size: 2.4rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.header {
+  background: url(../images/hero.svg) no-repeat center center/cover;
+  height: 100vh;
+}
+.header__content {
+  height: 100%;
+  padding: 0 27rem;
+}
+@media (max-width: 75em) {
+  .header__content {
+    padding: 0 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
