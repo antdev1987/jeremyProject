@@ -31,16 +31,12 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 37.5em) {
-  html {
-    font-size: 30%;
-  }
-}
 
 body {
   font-weight: 400;
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
+  background: #e5e5e5;
 }
 
 ul {
@@ -75,8 +71,16 @@ a {
   align-items: center;
 }
 
+.align-i-start {
+  align-items: flex-start;
+}
+
 .fd-column {
   flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .g-1 {
@@ -119,6 +123,14 @@ a {
   padding: 2rem 0;
 }
 
+.pX-2 {
+  padding: 0 2rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -131,6 +143,14 @@ a {
 
 .fs-1 {
   font-size: 1rem;
+}
+
+.fs-default {
+  font-size: 1.6rem;
+}
+
+.fs-md {
+  font-size: 1.8rem;
 }
 
 .fs-2 {
@@ -193,17 +213,181 @@ a {
   color: #f8f8f8;
 }
 
+.c-gray-1 {
+  color: #8a8a8a;
+}
+
 .c-blue-light {
   color: #57acf5;
 }
 
+.c-blue-dark {
+  color: #2b79bd;
+}
+
 .btn {
-  padding: 2rem 8rem;
+  padding: 1rem 8rem;
   color: #f8f8f8;
   background: #2b79bd;
   font-size: 2.4rem;
   display: inline-block;
   border-radius: 5px;
+}
+
+.card {
+  background: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card__img-box {
+  position: relative;
+}
+.card__img-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.card__img-box .comming-soon {
+  position: absolute;
+  font-size: 2.4rem;
+  color: #fff;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 98%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__header h2 {
+  width: 70%;
+  font-size: 1.8rem;
+}
+.card__header span {
+  font-size: 2.4rem;
+  color: #12828e;
+}
+.card__content {
+  font-size: 1.3rem;
+}
+.card__progress p {
+  font-size: 1.5rem;
+}
+.card__progress-bar {
+  background: #EBEBEB;
+  width: 50%;
+  height: 1rem;
+  position: relative;
+}
+.card__progress-user {
+  background: #2b79bd;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.card__info {
+  width: 100%;
+  border-bottom: 1px solid #EDEDED;
+}
+.card__info > div {
+  flex: 0 0 33%;
+}
+.card__footer {
+  padding-bottom: 2rem;
+}
+.card__footer-name {
+  font-size: 1.4rem;
+  color: #969696;
+}
+.card__footer-job {
+  font-size: 1.2rem;
+}
+
+.limited {
+  color: #cb1717;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 2.8rem;
+}
+
+.tab {
+  /* Style the buttons inside the tab */
+  /* Create an active/current tablink class */
+}
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 0 2rem;
+  display: inline-block;
+}
+.tab .deluxe {
+  position: relative;
+}
+.tab .deluxe::after {
+  content: "";
+  position: absolute;
+  background: #cb1717;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: 1.2rem;
+}
+.tab button.active {
+  color: #2b79bd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+.tabcontent__box {
+  flex-wrap: wrap;
+}
+.tabcontent__box > div {
+  flex: 0 0 45rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.toolLeft, .tooltiptext {
+  visibility: hidden;
+  width: 45rem;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+}
+.toolLeft .card__info, .tooltiptext .card__info {
+  border: none;
+  flex-wrap: wrap;
+}
+.toolLeft .card__info > div, .tooltiptext .card__info > div {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+}
+
+.tooltip:hover .tooltiptext, .tooltip:hover .toolLeft {
+  visibility: visible;
+}
+
+.tooltiptext {
+  left: 105%;
+}
+
+.toolLeft {
+  right: 105%;
 }
 
 .header {
