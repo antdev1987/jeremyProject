@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/accordion.js" defer></script>
+    <script src="js/tablinks.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header pY-2">
+      <nav class="nav container">
+        <img src="images/logo.svg" alt="logo" />
+      </nav>
+      <div
+        class="header__content txt-center c-white d-flex align-i-center fd-column jf-center"
+      >
+        <p class="fs-5 fw-300">Learn Refine. Pitch</p>
+        <h2 class="fs-5 fw-700">
+          Become A Better <span class="c-blue-light">Writer</span>. Sell Your
+          Script.
+        </h2>
+        <p class="fs-2 fw-600 c-gray pY-2">
+          Learn the basics of storytelling, plot development, dialogue, and
+          more. Upon completing any of the courses, you will be granted access
+          to submit your scripts to our producers’ marketplace to be optioned.
+        </p>
+        <a href="#" class="btn bg-blue mt-2">Register</a>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <section class="courses pt-5">
+      <div class="txt-center pY-2">
+        <h2 class="fs-700 fs-2">
+          Ready To Take Your Commitment To The Next Level?
+        </h2>
+        <p class="fw-600">
+          Add one-on-one coaching to either course offering and enjoy
+          personalized guidance, mentorship, and support from tv and film
+          regulars.
+        </p>
+      </div>
+
+      <div class="limited">
+        <img src="images/arrow-l.svg" alt="" />
+        <h2>Spots are limited. Reserve your seat today!</h2>
+        <img src="images/arrow-r.svg" alt="" />
+      </div>
+
+      <div class="tab txt-center mt-5 pY-2">
+        <button
+          class="tablinks"
+          onclick="openPlan(event, 'core')"
+          id="defaultOpen"
+        >
+          Core
+        </button>
+        <button class="tablinks deluxe" onclick="openPlan(event, 'deluxe')">
+          Deluxe
+        </button>
+      </div>
+
+      <div class="container">
+        <div id="core" class="tabcontent">
+          <div class="tabcontent__box columns-3">
+            <!-- card -->
+            <div class="card tooltip">
+              <!-- tooltip -->
+              <span class="tooltiptext"
+                ><header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Intensive Course For Originality In Film and Tv
+                  </h2>
+                </header>
+                <section
+                  class="card__info pY-2 d-flex jf-sb align-i-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex g-1">
+                    <p>November 1st ,8th ,15th ,22nd</p>
+                  </div>
+                  <div class="d-flex jf-center g-1 mt-3">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                </section>
+
+                <h2 class="fs-md fw-600">Class benefits:</h2>
+
+                <ul class="fs-default mt-2">
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Learn the playbook for writing and creating hit films and
+                      Tv.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2 pY-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Discover the process of finding and creating original
+                      script ideas.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Get access to our exclusive Producers’ marketplace where
+                      your script will be seen by international producers.
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="courseSales.html"
+                  class="btn bg-blue mt-3 w-100 txt-center"
+                  >Learn More</a
+                >
+              </span>
+              <!-- tooltip -->
+
+              <div class="card__img-box">
+                <img src="images/core-img-1.svg" alt="image" />
+              </div>
+              <div class="card__box pX-2">
+                <header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Intensive Course For Originality In Film and Tv
+                  </h2>
+                  <span class="fw-600"> $150 </span>
+                </header>
+
+                <section class="card__content pY-2">
+                  <p class="c-gray-1">
+                    Learn how to creatively write scripts from new ideas instead
+                    of pre-existing material.
+                  </p>
+                </section>
+
+                <section class="card__progress">
+                  <p class="c-blue-dark">3/4 Reserved</p>
+                  <div class="card__progress-bar">
+                    <div class="card__progress-user" style="width: 60%"></div>
+                  </div>
+                </section>
+
+                <section
+                  class="card__info pY-2 d-flex jf-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/google-meet.svg" alt="" />
+                    <p>Meet</p>
+                  </div>
+                </section>
+
+                <footer class="card__footer mt-2 d-flex align-i-center g-2">
+                  <img src="images/profile.svg" alt="" />
+                  <ul>
+                    <li class="card__footer-name">Melissa butler</li>
+                    <li class="card__footer-job">Course instructor</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="card tooltip">
+              <!-- tooltip -->
+              <span class="tooltiptext">
+                <header class="card__header">
+                  <h2 class="fw-600">
+                    Intensive Course For Dialogue In Film and TV
+                  </h2>
+                </header>
+                <section
+                  class="card__info pY-2 d-flex jf-sb align-i-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex g-1">
+                    <p>November 1st ,8th ,15th ,22nd</p>
+                  </div>
+                  <div class="d-flex jf-center g-1 mt-3">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                </section>
+
+                <h2 class="fs-md fw-600">Class benefits:</h2>
+
+                <ul class="fs-default mt-2">
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Discover dialogue tips that can help improve your dialogue
+                      writing every step of the way.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2 pY-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Master the skill of using dialogue to move your storyline
+                      along, without being obvious or bulky.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Learn to write each character’s specific dialogue,
+                      avoiding a blur of characters that all speak the same
+                      exact way.
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="courseSales.html"
+                  class="btn bg-blue mt-3 w-100 txt-center"
+                  >Learn More</a
+                >
+              </span>
+              <!-- tooltip -->
+
+              <div class="card__img-box">
+                <img src="images/core-img-2.svg" alt="image" />
+                <div class="comming-soon">
+                  <p>Comming-soon</p>
+                </div>
+              </div>
+              <div class="card__box pX-2">
+                <header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Intensive Course For Dialogue In Film and TV
+                  </h2>
+                </header>
+
+                <section class="card__content pY-2">
+                  <p class="c-gray-1">
+                    Giving you the one-on-one support and opportunity you need
+                    to write scripts from new ideas and develop creative
+                    confidence.
+                  </p>
+                </section>
+
+                <section class="card__progress">
+                  <p class="c-blue-dark">3/4 Reserved</p>
+                  <div class="card__progress-bar">
+                    <div class="card__progress-user" style="width: 0%"></div>
+                  </div>
+                </section>
+
+                <section
+                  class="card__info pY-2 d-flex jf-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/google-meet.svg" alt="" />
+                    <p>Meet</p>
+                  </div>
+                </section>
+
+                <footer class="card__footer mt-2 d-flex align-i-center g-2">
+                  <img src="images/profile.svg" alt="" />
+                  <ul>
+                    <li class="card__footer-name">Melissa butler</li>
+                    <li class="card__footer-job">Course instructor</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="card tooltip">
+              <!-- tooltip -->
+              <span class="toolLeft"
+                ><header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">VR Class.</h2>
+                </header>
+                <section
+                  class="card__info pY-2 d-flex jf-sb align-i-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex g-1">
+                    <p>November 1st ,8th ,15th ,22nd</p>
+                  </div>
+                  <div class="d-flex jf-center g-1 mt-3">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                </section>
+
+                <h2 class="fs-md fw-600">Class benefits:</h2>
+
+                <ul class="fs-default mt-2">
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Learn the unique difference between XR, VR, AR, and a
+                      Video Game Script.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2 pY-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Understand the basic fundamentals of VR, AR and how it
+                      differs from your traditional screenplay format.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Discover how to use virtual reality to further immerse
+                      your audience, making them become participants in the
+                      story itself.
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="courseSales.html"
+                  class="btn bg-blue mt-3 w-100 txt-center"
+                  >Learn More</a
+                >
+              </span>
+              <!-- tooltip -->
+
+              <div class="card__img-box">
+                <img src="images/card-image.svg" alt="image" />
+                <div class="comming-soon">
+                  <p>Comming-soon</p>
+                </div>
+              </div>
+              <div class="card__box pX-2">
+                <header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">VR Class.</h2>
+                </header>
+
+                <section class="card__content pY-2">
+                  <p class="c-gray-1">
+                    Understand the basics of Virtual Reality Screenplay and how
+                    it is used to further immerse an audience making them
+                    participants in the story itself.
+                  </p>
+                </section>
+
+                <section class="card__progress">
+                  <p class="c-blue-dark">3/4 Reserved</p>
+                  <div class="card__progress-bar">
+                    <div class="card__progress-user" style="width: 0"></div>
+                  </div>
+                </section>
+
+                <section
+                  class="card__info pY-2 d-flex jf-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/google-meet.svg" alt="" />
+                    <p>Meet</p>
+                  </div>
+                </section>
+
+                <footer class="card__footer mt-2 d-flex align-i-center g-2">
+                  <img src="images/profile.svg" alt="" />
+                  <ul>
+                    <li class="card__footer-name">Melissa butler</li>
+                    <li class="card__footer-job">Course instructor</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+        </div>
+
+        <div id="deluxe" class="tabcontent">
+          <div class="tabcontent__box columns-2">
+            <div class="card tooltip">
+              <!-- tooltip -->
+              <span class="tooltiptext"
+                ><header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Deluxe: Originality Courses and One-on-One Coaching.
+                  </h2>
+                </header>
+                <section
+                  class="card__info pY-2 d-flex jf-sb align-i-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex g-1">
+                    <p>November 1st ,8th ,15th ,22nd</p>
+                  </div>
+                  <div class="d-flex jf-center g-1 mt-3">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                </section>
+
+                <h2 class="fs-md fw-600">Class benefits:</h2>
+
+                <ul class="fs-default mt-2">
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Teach yourself how to write scripts from new ideas, build
+                      confidence and stand out in any writer’s room.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2 pY-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Work one-on-one with the best Tv and Film coaches to
+                      review your class material, mentor you and hone your
+                      craft.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Have access to our exclusive Producers’ marketplace where
+                      your script will be seen by international producers.
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="courseSales.html"
+                  class="btn bg-blue mt-3 w-100 txt-center"
+                  >Learn More</a
+                >
+              </span>
+              <!-- tooltip -->
+
+              <div class="card__img-box">
+                <img src="images/card-image.svg" alt="image" />
+              </div>
+              <div class="card__box pX-2">
+                <header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Deluxe: Originality Courses and One-on-One Coaching.
+                  </h2>
+                  <span class="fw-600"> $300 </span>
+                </header>
+
+                <section class="card__content pY-2">
+                  <p class="c-gray-1">
+                    Giving you the one-on-one support and opportunity you need
+                    to write scripts from new ideas and develop creative
+                    confidence.
+                  </p>
+                </section>
+
+                <section class="card__progress">
+                  <p class="c-blue-dark">3/4 Reserved</p>
+                  <div class="card__progress-bar">
+                    <div class="card__progress-user" style="width: 30%"></div>
+                  </div>
+                </section>
+
+                <section
+                  class="card__info pY-2 d-flex jf-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/google-meet.svg" alt="" />
+                    <p>Meet</p>
+                  </div>
+                </section>
+
+                <footer class="card__footer mt-2 d-flex align-i-center g-2">
+                  <img src="images/profile.svg" alt="" />
+                  <ul>
+                    <li class="card__footer-name">Melissa butler</li>
+                    <li class="card__footer-job">Course instructor</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+
+            <div class="card tooltip">
+              <!-- tooltip -->
+              <span class="toolLeft"
+                ><header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Deluxe: Dialogue Courses and One-on-One Coaching.
+                  </h2>
+                </header>
+                <section
+                  class="card__info pY-2 d-flex jf-sb align-i-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>4 Sessions</p>
+                  </div>
+                  <div class="d-flex g-1">
+                    <p>November 1st ,8th ,15th ,22nd</p>
+                  </div>
+                  <div class="d-flex jf-center g-1 mt-3">
+                    <img src="images/time.svg" alt="" />
+                    <p>12h 30min</p>
+                  </div>
+                </section>
+
+                <h2 class="fs-md fw-600">Class benefits:</h2>
+
+                <ul class="fs-default mt-2">
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Have access to professional dialogue writing classes with
+                      ongoing one-on-one mentorship.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2 pY-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Become proficient in writing great Film and Tv dialogues
+                      that feel natural while also being unique.
+                    </p>
+                  </li>
+                  <li class="d-flex align-i-start g-2">
+                    <img src="images/check.svg" alt="" class="mt-1" />
+                    <p>
+                      Have access to our exclusive Producers’ marketplace where
+                      your script will be seen by international producers.
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="courseSales.html"
+                  class="btn bg-blue mt-3 w-100 txt-center"
+                  >Learn More</a
+                >
+              </span>
+              <!-- tooltip -->
+
+              <div class="card__img-box">
+                <img src="images/card-image.svg" alt="image" />
+                <div class="comming-soon">
+                  <p>Comming-soon</p>
+                </div>
+              </div>
+              <div class="card__box pX-2">
+                <header class="card__header d-flex jf-sb">
+                  <h2 class="fw-600">
+                    Deluxe: Dialogue Courses and One-on-One Coaching.
+                  </h2>
+                </header>
+
+                <section class="card__content pY-2">
+                  <p class="c-gray-1">
+                    Enroll in this course and get one-on-one coaching that will
+                    help you become proficient in writing great Film and Tv
+                    dialogues.
+                  </p>
+                </section>
+
+                <section class="card__progress">
+                  <p class="c-blue-dark">0/4 Reserved</p>
+                  <div class="card__progress-bar">
+                    <div class="card__progress-user" style="width: 0%"></div>
+                  </div>
+                </section>
+
+                <section
+                  class="card__info pY-2 d-flex jf-center fwrap c-blue-dark"
+                >
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/session.svg" alt="" />
+                    <p>-Sessions</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/time.svg" alt="" />
+                    <p>-h-min</p>
+                  </div>
+                  <div class="d-flex jf-center g-1">
+                    <img src="images/google-meet.svg" alt="" />
+                    <p>Meet</p>
+                  </div>
+                </section>
+
+                <footer class="card__footer mt-2 d-flex align-i-center g-2">
+                  <img src="images/profile.svg" alt="" />
+                  <ul>
+                    <li class="card__footer-name">Anonymous Annie</li>
+                    <li class="card__footer-job">Course instructor</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq d-flex jf-sb container pt-5">
+      <main class="faq__content">
+        <span class="fs-default c-blue-dark fw-400">Support</span>
+        <h2 class="fs-big fw-600">FAQs</h2>
+        <p class="fs-default fw-400">
+          Do you have questions about our courses? Our FAQ may help you quicker!
+        </p>
+      </main>
+
+      <main class="faq__questions">
+        <button class="accordion">
+          Are there any requirements to study these courses?
+        </button>
+        <div class="panel fs-default">
+          <p>
+            Our courses are suitable for anyone with the motivation to improve,
+            upskill or reskill their screenwriting skill. All you need is a
+            phone, tablet, laptop, or computer, and you are good to go.
+          </p>
+        </div>
+
+        <button class="accordion">How do I receive and begin my course?</button>
+        <div class="panel fs-default">
+          <p>
+            Simply choose any course of your choice, click enroll now, choose a
+            payment option and complete the one-page checkout. Once you have
+            enrolled in any course, you will be sent a confirmation email with
+            instructions on how to get started and access to your dashboard
+            where your lessons will be displayed. You can start your studies
+            right away!
+          </p>
+        </div>
+
+        <button class="accordion">Is the course interactive?</button>
+        <div class="panel fs-default">
+          <p>
+            Yes! All our courses are interactive. You will learn screenwriting
+            the “hand-on approach” way. We are constantly investing in our
+            courses and updating the content as you learn.
+          </p>
+        </div>
+
+        <button class="accordion">
+          How long will you have access to the online course?
+        </button>
+        <div class="panel fs-default">
+          <p>
+            WoAccelerator provides you with LIFETIME access to your course.
+            There is no time limit for completing your courses; they can be
+            studied in your own time at your own pace.
+          </p>
+        </div>
+
+        <button class="accordion">
+          What student and course support do I receive?
+        </button>
+        <div class="panel fs-default">
+          <p>
+            Once you have chosen and enrolled in your course, you will get the
+            chance to submit your script to investors and connect with other
+            budding screenwriters.
+          </p>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer mt-5">
+      <div class="container footer__content">
+        <img src="images/footer__logo.svg" alt="" />
+        <div class="txt-center fs-md">
+          <a href="#" class="mX-2 c-white">Privacy Policy</a>
+          <a href="#" class="c-white">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
